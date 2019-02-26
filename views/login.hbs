@@ -1,0 +1,11 @@
+<form action="/login" method="POST" id="form" autocomplete="off">
+    {{#if errorMessage}}
+    <div class="error-message">{{errorMessage}}</div>
+    {{/if}}
+    <h1>Login</h1>
+    <input type="text" name="usernameoremail" id="usernameoremail" placeholder="username/email">
+    <input type="password" name="password" id="password" placeholder="password">
+    <div id="captcha">{{{captcha}}}</div>
+    <button type="submit" >login</button>
+    <h3>No account yet? <a href="/signup">Sign-up!</a></h3>
+</form>
